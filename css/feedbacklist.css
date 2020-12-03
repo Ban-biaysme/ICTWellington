@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: #111;
+	box-sizing: border-box;
+	background-image: url(../images/contact-us-banner-lrg.jpg);
+	background-size: cover;
+}
+
+h1 {
+	color: rgb(245, 238, 238);
+	font-size: 3rem;
+	font-weight: 600;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind', sans-serif;
+	letter-spacing: .1em;
+}
+
+.title{
+	color: rgb(34, 6, 1);
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    transition: .5s;
+    font-size:14px;
+    font-weight: 800;
+    
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(213, 172, 170);
+}
+
+tr:nth-child(odd) {
+    background-color:rgb(207, 212, 211);
+}
+
+div.inputDiv #logoutbtn{
+	font-size: 1.2em;
+	font-weight: 600;
+	text-decoration: none;
+	color: rgb(41, 41, 40);
+	border: 2px solid rgb(22, 22, 22);
+	padding: 4px 15px;
+    transition: background-color .5s;
+    background-color: rgb(177, 121, 104);
+}

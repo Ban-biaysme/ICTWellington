@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+    }
+
+ body{
+     background-color: rgb(244, 250, 250);
+     color: rgb(95, 100, 99);
+     font-family: "promt", sans-serif;
+     background-size: cover;
+ }   
+/*CSS for the  Nav bar */
+
+.nav-wrapper{
+    max-width: 1200px;
+    display:grid;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 15px 20px;
+    grid-template-columns: 40% auto;
+    background-color: rgba(5, 5, 5, 0.952);
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {background-color: rgb(4, 35, 58);}
+    to {background-color: rgb(3, 27, 63);}
+  }
+
+.nav-wrapper ul li{
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+}
+.nav-wrapper a{
+    letter-spacing: .1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(250, 250, 243);
+}
+.nav-wrapper a:hover{
+    cursor: pointer;
+    color: rgb(255, 236, 174);
+}
+
+.list-item{
+    margin-left: 10px;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+.logo1{
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: .2em;  
+    color: whitesmoke;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .1em;
+}
+.burger-icon{
+    display: none;
+}
+
+.btn1 { 
+    height: 40px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgb(1, 49, 66);
+    cursor: pointer;
+    margin: 0.25rem;
+    font-size: 1.0em;
+	font-weight: 600;
+	text-decoration: none;
+	color: #e9fffd;
+	border: none;
+	padding: 4px 8px;
+	transition:.5s;
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: #e9fffd;
+}
+
+#home-icon{
+    color:skyblue;
+}
+/*CSS for the  Main Wrapper division */
+.main-wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "featuredMain featuredMain featuredMain "
+        "featuredMain1 featuredMain1 featuredMain1 "
+        "contentMain contentSub contentSub"
+        "contentMain1 contentMain1 contentMain1"
+
+}
+
+.wrapper > .featured,
+.wrapper > .featured1,
+.wrapper > .main-content,
+.wrapper > .main-sidebar{
+    padding:20px;
+} 
+
+.wrapper > .featured{
+    padding:0;
+}
+
+ /* Index Page Carousel styling */
+
+ .featured{
+    grid-area: featuredMain;
+    min-height: 500px;
+    color:rgb(7, 7, 7);
+    display: grid;
+    align-content: flex-end;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.1));
+}
+
+ .carousel-item {
+    height: 45vh;
+    min-height: 33rem;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .portfolio-item {
+    margin-bottom: 10px;
+  }
+
+  .carousel-caption h3{
+      color: rgb(253, 251, 251);
+      font-weight: 800;
+  }
+ 
+  .carousel-caption h4{
+        color: rgba(247, 245, 245, 0.972);
+        font-weight:800;
+  }
+
+
+.featured h1{
+    font-size: 40px;
+    max-width: 650px;
+    color: #fff;
+	text-align: left;
+	font-weight: bold;
+    letter-spacing: .1em;  
+	font-family:  "Roboto", sans-serif;
+}
+
+#meta{
+    font-weight: 700;
+    color: rgb(255, 247, 247);
+    letter-spacing: .2em;
+}
+
+ #button-index{
+    height: 50px;
+    border-radius: 20px;
+    width: 200px;
+    background-color: rgb(1, 49, 66);
+    cursor: pointer;
+    margin: 0.25rem;
+    font-size: 1.0em;
+	font-weight: 600;
+	text-decoration: none;
+	color: #e9fffd;
+	border: none;
+	padding: 4px 15px;
+	transition:.5s;
+}
+
+.featured1 a {
+    text-decoration: none;
+    color: #e9fffd;
+    }
+
+#button-index:hover {
+    background-color: rgba(142, 245, 252, 0.857);
+    }
+
+.featured1{
+    grid-area: featuredMain1;
+    min-height: 300px;
+    color:rgb(7, 7, 7);
+    display: grid;
+    align-content: center;
+    font-weight: 500;
+    background:linear-gradient(rgb(175, 230, 220), rgba(208, 236, 230, 0.924));
+}
+
+.main-content,.main-content1, .featured, .featured1,.sub-featured > div, .main-sidebar{
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+}
+
+.featured1 h1{
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+.featured1 p{
+    text-align: justify;
+    font-weight: bold;  
+}
+
+#meta{
+    font-weight: 700;
+    color: rgb(238, 234, 234);
+    letter-spacing: .2em;
+}
+#meta1{
+    font-weight: bold;
+    padding-left: 5px;
+    letter-spacing: .2em;
+    color: black;
+}
+
+/*CSS for the  Main Content area */
+.main-content{
+    grid-area: contentMain;
+    color: rgb(68, 68, 68);
+    min-height: 450px;
+    line-height: 1.5em;
+    background-color: rgb(250, 250, 250);   
+    background: border-box, url(../images/vic-img14.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.main-sidebar{
+    grid-area: contentSub; 
+    color: rgb(33, 32, 32);
+    line-height: 1.5em;  
+    background:linear-gradient(rgb(253, 252, 252), rgba(245, 255, 253, 0.924));
+    background-size: cover;
+    font-weight: 600;
+}
+
+.main-sidebar h1{
+    font-size: 30px;
+    color: rgb(48, 46, 46);
+	font-weight: bold;
+    letter-spacing: .1em;  
+    font-family:  "Roboto", sans-serif;
+    text-decoration: underline;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.main-content2{
+    grid-area: contentMain1;
+    color: rgb(68, 68, 68);
+    min-height: 450px;
+    line-height: 1.5em;
+    background-color: rgb(250, 250, 250);   
+    background-size: cover;
+}
+.accordion {
+	background-color: rgb(4, 35, 58);
+	color: rgb(252, 253, 253);
+	cursor: pointer;
+	margin:5px 5px 5px 0;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background-color: rgb(197, 245, 241);
+	color: black;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;		
+}	  
+
+/*CSS for the  Footer*/
+.footer{
+    margin: auto;
+    background:rgb(4, 35, 58);
+    display: grid;
+    background-size: cover;
+    grid-template-columns: minmax(20px, 300px) minmax(20px, 300px) minmax(20px, 300px) minmax(20px, 300px);
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    color: rgb(204, 203, 201);
+    letter-spacing: .1em;
+}
+
+.footer > div{
+    padding: 20px;
+}
+
+.copyright{
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    grid-column: 1/-1;
+}
+
+/* TABLET MEDIA QIERY */
+
+@media screen and (max-width: 950px)
+{
+    .wrapper
+    {
+      grid-template-areas:
+        "featuredMain featuredMain  featuredMain"
+        "featuredMain1 featuredMain1  featuredMain1"
+        "featuredSub featuredSub featuredSub"
+        "contentMain contentMain contentMain"
+        "contentSub contentSub contentSub"
+        "contentMain1 contentMain1 contentMain1"
+    }
+    .sub-featured{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .nav-items{
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    .logo1{
+        grid-column: 1/5;
+        text-align: center;
+        
+    }
+    .nav-wrapper{
+            margin-top: 0;
+    }
+
+    .featured1 h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+}
+
+/* MOBILE MEDIA QIERY */
+
+@media screen and (max-width: 690px)
+{
+    .logo1{
+        grid-column: 1/3;
+        font-size: small;
+    }
+
+    .nav-items{
+        grid-column: 1/3;
+        text-align: center;
+    }
+
+    .nav-wrapper ul{
+       padding: 0;
+       margin: 0;
+
+    }
+    .nav-wrapper ul li{
+        display: block;
+
+    }
+
+    .burger-icon{
+        
+        display: inline-block;
+        justify-self: end;
+        grid-column: 4/5;
+        border: 2px solid rgb(253, 250, 250);
+        color: rgb(250, 250, 244);
+        padding:10px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    
+    .burger-icon:hover{
+        cursor: pointer;
+    }
+
+    .wrapper
+    {
+      grid-template-areas:
+        "featuredMain featuredMain  featuredMain"  
+        "featuredMain1 featuredMain1  featuredMain1"
+        "contentMain1 contentMain1 contentMain1"
+        "featuredSub featuredSub featuredSub"
+        "contentMain contentMain contentMain"    
+        "contentSub contentSub contentSub"
+    }
+
+    .sub-featured{
+        grid-template-columns:1fr;
+    }
+
+    .footer > div{
+        grid-column: 1/5;
+    }
+
+    .featured h1{
+        font-size: 30px;
+    }
+
+    .featured1 h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .main-sidebar h3{
+        font-size: 20px;
+    }
+    .mobile-show{
+        display: block;
+    }
+
+    .mobile-hide{
+        display:none;
+    }
+
+    .footer div h4{
+        font-size: 20px;
+    }
+}
+
+
+/* * Landing page Carousel heading */ 
+/* 
+.cr-cap {
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+  
+  .cr-cap .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .cr-cap .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(245, 253, 132);
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+  
+  .cr-cap .letter {
+    display: inline-block;
+    line-height: 1em;
+  } */

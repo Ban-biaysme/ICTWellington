@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ICT Registration Form</title>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>  
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+
+</head>
+
+<body>
+    <div class="login-page">
+
+        <h1><span class="title">WELCOME TO ICT </span> Graduate School </h1>
+        <br>
+        <div class="form" id="register-form">
+            <a href="index.html"><i class="fas fa-home fa-2x" style="color:#8cf0e2;"></i></a>
+            <br><br><br>
+
+              <input type="text" name="username" class="input" id="username1" placeholder="Plaese enter user name ">
+              <span id="name_msg1"></span>
+
+              <input type="password" name="password" class="input" id="pwd1" placeholder="Plaese enter password">
+              <span id="pwd_msg1"></span>
+
+              <input type="password" name="cpassword" class="input" id="cpwd" placeholder="Plaese enter password again" >
+              <span id="cpwd_msg"></span>
+
+              <input type="text" name="email" class="input"  id="email" placeholder="Plaese enter email id ">
+              <span id="email_msg1"></span>
+
+              <button class="add" type="submit" id="submitbtn1"> SIGN UP </button>
+              <br>
+              <p class="message">Already registered? <a href="login.html"> LOGIN HERE</a></p>
+        </div>
+    </div>
+
+      <!-- Form validation script-->
+      <script type="text/javascript" src="javascript/register.js"></script>
+</body>
+</html>

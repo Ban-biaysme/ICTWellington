@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICT GRADUATE SCHOOL- CONTACT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+ 
+<!-- Style sheet for the HTML page-->
+<link rel="stylesheet" href="css/contact.css">
+
+<!-- Jvascript file to for toggle menu for mobile device and large screen device-->
+<script src="javascript/app.js"></script>
+
+
+</head>
+
+<body>
+<nav class="nav-wrapper">
+  <div class="logo1"> 
+    <i class="fas fa-university" style="color:#8cf0e2;"></i> <strong> ICT GRADUATE SCHOOL </strong> 
+  </div>
+
+  <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
+    <ul class="nav-items main-nav mobile-hide">
+      <li class="list-item"><a href="index.html"><i class="fa fa-fw fa-home"></i>HOME</a></li>
+      <li class="list-item"><a href="about.html"><i class="fa fa-fw fa-info"></i>ABOUT</a></li>          
+      <li class="list-item"><a href="#"><i class="fa fa-fw fa-envelope" class="list-item"></i>CONTACT</a></li>
+      <li class="list-item"><a href="index.html#FAQ"><i class="fa fa-fw fa-question" class="list-item"></i> FAQ's</a></li>
+      <li class="list-item"><a href="login.html"><i class="fa fa-fw fa-user" class="list-item"></i>LOGIN</a></li> 
+    </ul>
+</nav>
+
+
+<div class="main-wrapper">
+  <div class="wrapper">
+     <div class="featured">
+      <h1>We’d love to hear from you!</h1>
+    </div> 
+
+    <div class="main-content">
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <span id="hero-date"><strong><h5>GIVE YOUR FEEDBACK!</h5></strong></span> 
+
+                <form id="contact-form" action="contact.php" method="post" onsubmit= "return checkForm()">	
+                  <!-- <div id="contact-form" name="feedback"> -->
+
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Full Name:</label>
+                    <input type="text" name="username" placeholder="Enter your full name" class="form-control" id="firstname" required data-validation-required-message="Please enter your first name.">
+                    <p class="help-block"></p>
+                    <span id="firstname_msg"></span>
+                  </div>
+                </div>
+
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Phone Number:</label>
+                    <input type="tel"  name="phno" placeholder="Enter your telephone number" class="form-control" id="phone" required data-validation-required-message="Please enter 10 digit phone number.">
+                    <span id="ph_msg"></span>
+                  </div>
+                </div>
+
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Email Address:</label>
+                    <input type="email" name="email" placeholder="Enter your email address" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                    <span id="email_msg"></span>
+                  </div>
+                </div>
+
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Which degree are you interested in?:</label>
+                        <select id="degree" name="degree" class="form-control" required data-validation-required-message="select an program option">
+                            <option disabled selected value="0">-- Select an option--</option>
+                            <option value="unsure">Unsure</option>
+                            <option value="softdev"> Masters of Software Development</option>
+                            <option value="uxui">Masters of UX and UI</option>
+                            <option value="ba">Masters of Business Analysis</option>
+                        </select> 
+                      <span id="prog_msg"></span>
+                    </div>
+                  </div>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Additional Comments (optional):</label>
+                    <textarea  id="usercomment" name="comments" rows="5" cols="30" class="form-control" id="message"  data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                  </div>
+                </div>
+                <div id="success"></div>
+                
+                <!-- For success/fail messages -->
+                <!-- Below button will check whether all the fileds have valid data ot=r not 
+                If it is valid the data will send to the database -->
+
+                <button id="submit" class="btn btn-primary btn-xl text-uppercase" type="submit">SUBMIT</button>
+
+                <button id="resetButton" class="btn btn-primary btn-xl text-uppercase" value="Clear form" type="reset">RESET</button>
+
+              </form>
+            </div>
+      
+          </div>
+
+    </div>
+
+
+    <div class="main-sidebar">
+ 
+    <!-- Embedded Google Map -->
+      <iframe id="gmap" height="300px"  frameborder="2px" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7734015080123!2d174.77659841468855!3d-41.29203587927305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38af8d0abe1203%3A0xfd7f853ecf721dc1!2sWellington%20ICT%20Graduate%20School!5e0!3m2!1sen!2snz!4v1606297375508!5m2!1sen!2snz" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <hr><br>
+      <div class="email-digest-subscription">
+        <h4>Subscribe to our newsletter</h4>
+        <p>Join ICT graduate school today and get all the news of our upcoming events! </p>
+
+        <form id="subscribe" action="#" accept-charset="UTF-8" method="post">
+            <input placeholder="Email Address" class="email" name="email2" id="email2" type="email">
+            <br><br>
+            <button name="button" type="submit" class="subscribe"><strong>SEND ME UPDATES</strong></button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="foot1">
+    <h4 class="logo" style="text-align: left;">NEC Building</h4>
+    <p>40 Taranaki Street</p>
+    <p>0800 935 542 (0800 WELLICT)</p>
+    <p>admin@ictgradschool.co.nz</p>
+  </div>
+  <div class="foot2">
+    <h4>Useful Links</h4>
+    <ul class="fa-ul social-footer">
+      <li><span class="fa-li" ><i class="fas fa-check-square"></i></span>HOME</li>
+      <li><span class="fa-li"><i class="fas fa-check-square"></i></span>OUR PROGRAMMES</li>
+      <li><span class="fa-li"><i class="fas fa-check-square"></i></span>OUR LECTURERS</li>
+    </ul>
+  </div>
+
+  <div class="foot3">
+    <h4> Programmes</h4>
+    <p>  Professional Business Analysis </p>
+    <p>  Software Development </p> 
+    <p>  User Experience Design </p>
+    <p>  Design Technology </p>
+  </div>
+
+  <div class="foot4">
+    <h4>Social Media</h4>
+   <a href="#"><i class="fab fa-facebook-f"></i></a><br>
+   <a href="#"><i class="fab fa-youtube"></i></a><br>
+   <a href="#"><i class="fab fa-linkedin-in"></i></a><br>
+
+  </div>
+  <div class="copyright">© 2020, ICT Graduate School. All rights reserved.</div>
+</footer>
+
+
+<!-- Feedback Form validation script-->
+<!-- <script src="javascript/contact.js"></script> -->
+
+</body>
+</html>
